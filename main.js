@@ -50,8 +50,13 @@ function getOperand(operand) {
             input_var.value += "/";
             break;
         case '+/-':
-            input_var.value = -1 * input_var.value;
-            break;
+            if (isNaN(input_var.value)) {
+                break;
+            }
+            else {
+                input_var.value = -1 * input_var.value;
+                break;
+            }
     }
 }
 
@@ -73,4 +78,8 @@ function makePercent() {
     else {
         document.getElementById('input').value = thevalue / 100;
     }
+}
+
+function addDecimal() {
+    document.getElementById('input').value += ".";
 }

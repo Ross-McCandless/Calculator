@@ -9,6 +9,7 @@
     margin: auto;
     background-color: black;
     border-radius: 2%;
+    position: absolute;
 }
 
 .top-panel{
@@ -16,19 +17,25 @@
     width: 300px;
     background-color: black;
     border-radius: 2%;
+    position: relative;
 }
 
-#input{
-    color: white;
+input{
     text-align: right;
-    width: 280px;
-    line-height: 130px;
+    width: 93%;
+    height: 95%;
+    line-height: 100%;
     font-size: 75px;
     background-color: black;
-    border: none;
     border-radius: 5%;
+    border: none;
+    color: white;
+    z-index: 0;
 }
 
+input::placeholder {
+    color: white;
+}
 
 input:focus {
     outline-width: 0;
@@ -89,6 +96,7 @@ input:focus {
     font-weight: bold;
     color: black;
     font-size: 20px;
+    border: none;
 }
 
 .circle2 {
@@ -102,6 +110,7 @@ input:focus {
     font-weight: bold;
     color: white;
     font-size: 20px;
+    border: none;
 }
 
 .circle3 {
@@ -115,10 +124,11 @@ input:focus {
     font-weight: bold;
     color: white;
     font-size: 20px;
+    border: none;
 }
 
 .circle4{
-    background-color: rgb(76, 0, 255);
+    background-color: rgb(255, 166, 0);
     height: 55px;
     width: 55px;
     border-radius: 100%;
@@ -128,6 +138,8 @@ input:focus {
     font-weight: bolder;
     color: white;
     font-size: 20px;
+    border: none;
+    z-index: 1;
 }
 
 #zero {
@@ -146,5 +158,5 @@ input:focus {
 }
 
 .circle4:hover {
-    background-color: rgb(109, 67, 207);
+    background-color: rgb(212, 155, 79);
 }
